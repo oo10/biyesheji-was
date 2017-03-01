@@ -1,0 +1,175 @@
+// Created by yang on 2017/2/26.
+html
+  head
+    meta(charset='UTF-8')
+    |     
+    meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    |     
+    title Document
+    |     
+    script(type='text/javascript', src='http://lib.yangqiwang.cn/jquery.min.js')
+    |     
+    script(src='../../gulpfile.js')
+  style.
+    @import "../style.css";
+    .content-wrap {
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 200px;
+    }
+    .download-status {
+    padding-left: 70px;
+    width: 870px;
+    }
+    .wendang-info{
+    text-align: left;
+    }
+    .wendang-info h2 {
+    font-size: 24px;
+    line-height: 50px;
+    text-align: left;
+    }
+    .wendang-info span {
+    font-size: 16px
+    }
+    .download-btn {
+    margin-left: 20px;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 5px;
+    background: #70c570;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    }
+    .preview {
+    text-align: left;
+    margin: 22px 0 35px 0;
+    }
+    .preview img {
+    width: 860px;
+    border: 1px solid #d6d6d6;
+    display: none;
+    }
+    .content-wrap p {
+    text-align: center;
+    width: 860px;
+    color: #888888;
+    }
+    .content-wrap p a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #d6d6d6;
+    font-size: 20px;
+    }
+    .content-wrap p span {
+    margin: 0 10px;
+    }
+  body
+    header
+      .header-wrap
+        .title
+          h1 &#x98CE;&#x4FE1;&#x5B50;
+          |             
+          h4 &#x5927;&#x5B66;&#x751F;&#x7EFC;&#x5408;&#x670D;&#x52A1;&#x5E73;&#x53F0;
+        |         
+        nav
+          ul
+            li
+              a(href='#') &#x5546;&#x57CE;
+            |                 
+            li
+              a.cur(href='#') &#x5B66;&#x5E93;
+            |                 
+            li
+              a(href='#') &#x793E;&#x533A;
+        |         
+        .user
+          img.user-avatar(src='http://himg.bdimg.com/sys/portrait/item/58a3793632343139303533376506.jpg')
+          |             
+          span.user-name &#x7528;&#x6237;&#x540D;
+          |             
+          a.user-join
+            object
+              a(href='#') &#x767B;&#x9646;
+            |                 /
+            |                 
+            object
+              a(href='#') &#x6CE8;&#x518C;
+    main
+      .site-nav-wrap
+        .site-nav
+          span.site-nav-title &#x5B66;&#x5E93;
+          |             
+          .search
+            input.search-input(type='text', placeholder='输入商品/店铺')
+            |                 
+            button.search-btn &#x641C;&#x7D22;
+      |     
+      .content-wrap
+        .wendang-info
+          h2 &#x7535;&#x5B50;&#x5546;&#x52A1;&#x73AF;&#x5883;&#x5206;&#x6790;&#x62A5;&#x544A;
+          |             
+          span &#x738B;&#x6556;&#x751F;
+          |             
+          span &#x6587;&#x6863;&#x91CF; 55
+          |             
+          span &#x6D4F;&#x89C8;&#x91CF; 10000
+          |             
+          span(style='color:#b85330;') &#x514D;&#x8D39;
+          |             
+          a.download-btn(href='#') &#x4E0B;&#x8F7D;&#x6587;&#x6863;
+        |         
+        .preview
+          img.preview-item(src='../img/preview.jpg')
+          |             
+          img.preview-item(src='../img/preview.jpg')
+          |             
+          img.preview-item(src='../img/preview.jpg')
+          |             
+          img.preview-item(src='../img/preview.jpg')
+          |             
+          img.preview-item(src='../img/preview.jpg')
+        |         
+        p
+          a.pre(href='javascript:void(0)') &lt;&lt;
+          |             
+          span
+            span.cur-page 1
+            | /
+            span.all-page 5
+          |             
+          a.next(href='javascript:void(0)') &gt;&gt;
+    footer
+      .footer-warp
+    script.
+      $(function () {
+      cur = 1;
+      len = $('.preview-item').length;
+      updata(cur);
+      $('.next').click(function () {
+      if(cur<len) {
+      cur++;
+      updata(cur);
+      }
+      })
+      $('.pre').click(function () {
+      if(cur>1){
+      cur --;
+      updata(cur);
+      }
+      })
+      function updata (a) {
+      console.log(a)
+      $('.preview-item').hide();
+      $('.preview-item').eq(a-1).fadeIn();
+      $('.cur-page').text(a);
+      $('.all-page').text(len);
+      }
+      })

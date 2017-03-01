@@ -1,0 +1,120 @@
+<!--Created by yang on 2017/2/28.-->
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="http://lib.yangqiwang.cn/jquery.min.js"></script>
+</head>
+<style>
+    @import "../style.css";
+    .content-wrap {
+        padding-top: 40px;
+    }
+    .post {
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .msg-box {
+        width: 900px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .post input {
+        height: 30px;
+        width: 400px;
+        font-size: 20px;
+        padding-left: 10px;
+        font-family: inherit;
+        margin-bottom: 30px;
+        border: 1px solid #d5d5d5;
+    }
+    .post textarea {
+        font-family: inherit;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 20px;
+        margin: 0 auto 20px auto;
+        width: 900px;
+        height: 500px;
+        background: #fff;
+        border: 1px solid #d5d5d5;
+    }
+    .submit-art {
+        display: inline-block;
+        font-size: 18px;
+        text-align: center;
+        width: 90px;
+        height: 30px;
+        line-height: 30px;
+        background: #fff;
+        box-shadow: 2px 4px 4px rgba(126,142,142,0.2);
+    }
+</style>
+<body>
+<header>
+    <div class="header-wrap">
+        <div class="title">
+            <h1>风信子</h1>
+            <h4>大学生综合服务平台</h4>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">商城</a></li>
+                <li><a href="#">学库</a></li>
+                <li><a class="cur" href="#">社区</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <img class="user-avatar" src="http://himg.bdimg.com/sys/portrait/item/58a3793632343139303533376506.jpg">
+            <span class="user-name">用户名</span>
+            <a class="user-join">
+                <object><a href="#">登陆</a></object>
+                /
+                <object><a href="#">注册</a></object>
+            </a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="site-nav-wrap">
+        <div class="site-nav">
+            <span class="site-nav-title">社区</span>
+            <div class="search">
+                <input class="search-input" type="text" placeholder="输入商品/店铺">
+                <button class="search-btn">搜索</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrap">
+        <!--  文章  -->
+        <div class="post">
+            <div class="msg-box">
+                <p>
+                    <input placeholder="请输入标题" type="text">
+                </p>
+                <textarea placeholder="在此输入文章内容"></textarea>
+            </div>
+            <p>
+                <a class="submit-art" href="javascript:void(0)">发表帖子</a>
+            </p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-warp">
+
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+// Created by yang on 2017/2/28.
+html
+  head
+    meta(charset='UTF-8')
+    |     
+    meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    |     
+    title Document
+    |     
+    script(type='text/javascript', src='http://lib.yangqiwang.cn/jquery.min.js')
+  style.
+    @import "../style.css";
+    .content-wrap {
+    padding-top: 40px;
+    }
+    .communtiy{
+    width: 1030px;
+    }
+    .communtiy h2 {
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: 1px solid #b9b9b9;
+    }
+    .communtiy-warp {
+    display: flex;
+    justify-content: space-between;
+    }
+    .comm-cont {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 290px;
+    min-height: 200px;
+    max-height: 480px;
+    overflow: hidden;
+    background: #fff;
+    }
+    .comm-cont h3 {
+    font-size: 14px;
+    line-height: 30px;
+    }
+    .comm-cont a {
+    text-overflow: ellipsis;
+    width: 100%;
+    max-height: 24px;
+    overflow: hidden;
+    display: block;
+    line-height: 24px;
+    font-size: 14px;
+    color: #b9b9b9;
+    transition: .5s ease all;
+    }
+    .comm-cont a:hover {
+    font-size: 16px;
+    color: #000;
+    }
+    .article {
+    width: 1030px;
+    margin-top: 30px;
+    }
+    .article-warp {
+    padding: 30px;
+    background: #e2e2ea;
+    }
+    .article-warp h2 {
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 10px;
+    max-height: 40px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    }
+    .article-warp p {
+    font-size: 18px;
+    line-height: 24px;
+    max-height: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+    .article > img {
+    width: 100%;
+    height: 335px;
+    padding: 10px 0;
+    object-fit: contain;
+    background: #d5d5d5;
+    }
+    .penal {
+    font-size: 20px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .penal > span {
+    display: flex;
+    align-items: center;
+    }
+    .penal > span > span {
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    }
+    .penal > span i {
+    margin-right: 10px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    }
+    .penal > span i.eye {
+    background: url("https://img.alicdn.com/imgextra/i2/1876943437/TB2BWHAhbxmpuFjSZJiXXXauVXa_!!1876943437.jpg");
+    }
+    .penal > span i.msg {
+    background: url("https://img.alicdn.com/imgextra/i4/1876943437/TB2gjjshdRopuFjSZFtXXcanpXa_!!1876943437.jpg");
+    }
+    .partner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+    .partner-warp {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    .partner-warp > img {
+    padding-bottom: 30px;
+    width: 170px;
+    height: 90px;
+    object-fit: cover;
+    }
+  body
+    header
+      .header-wrap
+        .title
+          h1 &#x98CE;&#x4FE1;&#x5B50;
+          |             
+          h4 &#x5927;&#x5B66;&#x751F;&#x7EFC;&#x5408;&#x670D;&#x52A1;&#x5E73;&#x53F0;
+        |         
+        nav
+          ul
+            li
+              a(href='#') &#x5546;&#x57CE;
+            |                 
+            li
+              a(href='#') &#x5B66;&#x5E93;
+            |                 
+            li
+              a.cur(href='#') &#x793E;&#x533A;
+        |         
+        .user
+          img.user-avatar(src='http://himg.bdimg.com/sys/portrait/item/58a3793632343139303533376506.jpg')
+          |             
+          span.user-name &#x7528;&#x6237;&#x540D;
+          |             
+          a.user-join
+            object
+              a(href='#') &#x767B;&#x9646;
+            |                 /
+            |                 
+            object
+              a(href='#') &#x6CE8;&#x518C;
+    main
+      .site-nav-wrap
+        .site-nav
+          span.site-nav-title &#x793E;&#x533A;
+          |             
+          .search
+            input.search-input(type='text', placeholder='输入商品/店铺')
+            |                 
+            button.search-btn &#x641C;&#x7D22;
+      |     
+      .content-wrap
+        .communtiy
+          h2 &#x8BDD;&#x9898;&#x5217;&#x8868;
+          |             
+          .communtiy-warp
+            .comm-cont
+              h3 &#x6700;&#x65B0;&#x5E16;&#x5B50;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+            |                 
+            .comm-cont
+              h3 &#x672C;&#x5468;&#x70ED;&#x5E16;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+            |                 
+            .comm-cont
+              h3 &#x9605;&#x8BFB;&#x70ED;&#x5E16;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+              |                     
+              a(href='#') &#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x652F;&#x4ED8;&#x5B9D; Android &#x7248;&#x9690;&#x79C1;&#x95E8;&#xFF1F;
+        |         
+        .article
+          img.article-img(src='https://img.alicdn.com/imgextra/i4/1876943437/TB2csfdgHBmpuFjSZFuXXaG_XXa_!!1876943437.jpg')
+          |             
+          .article-warp
+            h2
+              | &#x5982;&#x4F55;&#x6210;&#x4E3A;&#x98CE;&#x4FE1;&#x5B50;&#x5E73;&#x53F0;&#x7528;&#x6237;?
+            |                 
+            p
+              | &#x8F93;&#x5165;&#x7F51;&#x5740;www.xxxx.com&#xFF0C;&#x8FDB;&#x5165;&#x5E73;&#x53F0;&#x9996;&#x9875;&#xFF0C;&#x70B9;&#x51FB;&#x53F3;&#x4E0A;&#x89D2;&#xFF1A;&#x6CE8;&#x518C;&#xFF1A;&#xFF0C;&#x8FDB;&#x5165;&#x6CE8;&#x518C;&#x9875;&#x9762;&#xFF0C;&#x7136;&#x540E;&#x6309;&#x7167;&#x8981;&#x6C42;&#x64CD;&#x4F5C;&#xFF0C;&#x5373;&#x53EF;&#x6210;&#x529F;&#x6CE8;&#x518C;&#x4E3A;&#x98CE;&#x4FE1;&#x5B50;&#x5E73;&#x53F0;&#x7528;
+              | &#x8F93;&#x5165;&#x7F51;&#x5740;www.xxxx.com&#xFF0C;&#x8FDB;&#x5165;&#x5E73;&#x53F0;&#x9996;&#x9875;&#xFF0C;&#x70B9;&#x51FB;&#x53F3;&#x4E0A;&#x89D2;&#xFF1A;&#x6CE8;&#x518C;&#xFF1A;&#xFF0C;&#x8FDB;&#x5165;&#x6CE8;&#x518C;&#x9875;&#x9762;&#xFF0C;&#x7136;&#x540E;&#x6309;&#x7167;&#x8981;&#x6C42;&#x64CD;&#x4F5C;&#xFF0C;&#x5373;&#x53EF;&#x6210;&#x529F;&#x6CE8;&#x518C;&#x4E3A;&#x98CE;&#x4FE1;&#x5B50;&#x5E73;&#x53F0;&#x7528;
+              | &#x8F93;&#x5165;&#x7F51;&#x5740;www.xxxx.com&#xFF0C;&#x8FDB;&#x5165;&#x5E73;&#x53F0;&#x9996;&#x9875;&#xFF0C;&#x70B9;&#x51FB;&#x53F3;&#x4E0A;&#x89D2;&#xFF1A;&#x6CE8;&#x518C;&#xFF1A;&#xFF0C;&#x8FDB;&#x5165;&#x6CE8;&#x518C;&#x9875;&#x9762;&#xFF0C;&#x7136;&#x540E;&#x6309;&#x7167;&#x8981;&#x6C42;&#x64CD;&#x4F5C;&#xFF0C;&#x5373;&#x53EF;&#x6210;&#x529F;&#x6CE8;&#x518C;&#x4E3A;&#x98CE;&#x4FE1;&#x5B50;&#x5E73;&#x53F0;&#x7528;
+              | &#x8F93;&#x5165;&#x7F51;&#x5740;www.xxxx.com&#xFF0C;&#x8FDB;&#x5165;&#x5E73;&#x53F0;&#x9996;&#x9875;&#xFF0C;&#x70B9;&#x51FB;&#x53F3;&#x4E0A;&#x89D2;&#xFF1A;&#x6CE8;&#x518C;&#xFF1A;&#xFF0C;&#x8FDB;&#x5165;&#x6CE8;&#x518C;&#x9875;&#x9762;&#xFF0C;&#x7136;&#x540E;&#x6309;&#x7167;&#x8981;&#x6C42;&#x64CD;&#x4F5C;&#xFF0C;&#x5373;&#x53EF;&#x6210;&#x529F;&#x6CE8;&#x518C;&#x4E3A;&#x98CE;&#x4FE1;&#x5B50;&#x5E73;&#x53F0;&#x7528;
+            |                 
+            .penal
+              span
+                span
+                  i.eye
+                  | 3152
+                |                         
+                span
+                  i.msg
+                  | 21
+              |                     
+              span
+                a(href='#')
+                  | &#x9605;&#x8BFB;&#x5168;&#x6587; 
+                  object
+                    a(style='color:#eb5b4c;font-weight: bolder') &#x3000;&gt;
+        |         
+        .communtiy.partner
+          h2 &#x5408;&#x4F5C;&#x673A;&#x6784;
+          |             
+          .partner-warp
+            img(src='https://img.alicdn.com/imgextra/i4/1876943437/TB2csfdgHBmpuFjSZFuXXaG_XXa_!!1876943437.jpg')
+            |                 
+            img(src='https://img.alicdn.com/imgextra/i4/1876943437/TB2csfdgHBmpuFjSZFuXXaG_XXa_!!1876943437.jpg')
+            |                 
+            img(src='https://img.alicdn.com/imgextra/i4/1876943437/TB2csfdgHBmpuFjSZFuXXaG_XXa_!!1876943437.jpg')
+            |                 
+            img(src='https://img.alicdn.com/imgextra/i4/1876943437/TB2csfdgHBmpuFjSZFuXXaG_XXa_!!1876943437.jpg')
+            |                 
+            img(src='https://img.alicdn.com/imgextra/i4/1876943437/TB2csfdgHBmpuFjSZFuXXaG_XXa_!!1876943437.jpg')
+    footer
+      .footer-warp

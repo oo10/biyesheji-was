@@ -1,0 +1,249 @@
+<!--Created by yang on 2017/2/28.-->
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="http://lib.yangqiwang.cn/jquery.min.js"></script>
+</head>
+<style>
+    @import "../style.css";
+    .content-wrap {
+        padding-top: 40px;
+    }
+    .search-result {
+        width: 1030px;
+    }
+    .search-result h2 {
+        line-height: 40px;
+        font-size: 18px;
+        font-weight: normal;
+        border-bottom: 1px solid #b9b9b9;
+    }
+    .search-item {
+        padding: 50px 30px 10px 0;
+        border-bottom: 1px solid #d6d6d6;
+    }
+    .search-item .title {
+        font-size: 22px;
+        color: #444d89;
+        line-height: 40px;
+    }
+    .search-item .author {
+        padding-left: 70px;
+        font-weight: bolder;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .search-item .content {
+        text-align: justify;
+        overflow : hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        padding-left: 70px;
+        font-size: 18px;
+        line-height: 24px;
+        position: relative;
+    }
+    .search-item .content::after{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: #fff;
+        display: inline-block;
+        content: '显示全部';
+        color: #444d89;
+        font-weight: bolder;
+        padding-left: 40px;
+        background: url("https://img.alicdn.com/imgextra/i4/1876943437/TB2xtP6fW8lpuFjy0FpXXaGrpXa_!!1876943437.png") 0 0 / cover;
+    }
+    .penal {
+        padding-left: 70px;
+        line-height: 40px;
+        font-size: 18px;
+    }
+    .penal > span {
+        padding-right: 40px;
+    }
+    .penal a {
+        color: #444d89;
+        padding-right: 10px;
+    }
+</style>
+<body>
+<header>
+    <div class="header-wrap">
+        <div class="title">
+            <h1>风信子</h1>
+            <h4>大学生综合服务平台</h4>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">商城</a></li>
+                <li><a class="cur" href="#">学库</a></li>
+                <li><a href="#">社区</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <img class="user-avatar" src="http://himg.bdimg.com/sys/portrait/item/58a3793632343139303533376506.jpg">
+            <span class="user-name">用户名</span>
+            <a class="user-join">
+                <object><a href="#">登陆</a></object>
+                /
+                <object><a href="#">注册</a></object>
+            </a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="site-nav-wrap">
+        <div class="site-nav">
+            <span class="site-nav-title">社区</span>
+            <div class="search">
+                <input class="search-input" type="text" placeholder="输入商品/店铺">
+                <button class="search-btn">搜索</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrap">
+        <div class="search-result">
+            <h2>搜索结果：法律</h2>
+            <div class="search-item">
+                <a href="#">
+                    <div class="title">现在年轻律师的生存状态是怎样的？</div>
+                    <div class="author">单壬贵</div>
+                    <div class="content">
+                        今天恰好和同行讨论到这个话题。目前在上海，写点身边典型的在年轻（三年以下）律师的生活状态吧。 律师A是我表
+                        姐，在华政念研究生的第二年去了芝大读了llm，回来后顺带拿了个高级口译，毕业后顺利进了top内所，在公司组做着
+                        高大上非诉业务。 从最初没日高大上非诉业务。 从最初没日高大上非诉业务。 从最初没日高大上非诉业务日高大上非诉业务
+                    </div>
+                </a>
+                <div class="penal">
+                    <span><a href="#">赞</a>(124)</span>
+                    <span><a href="#">评论</a>(52)</span>
+                </div>
+            </div>
+            <div class="search-item">
+                <a href="#">
+                    <div class="title">现在年轻律师的生存状态是怎样的？</div>
+                    <div class="author">单壬贵</div>
+                    <div class="content">
+                        今天恰好和同行讨论到这个话题。目前在上海，写点身边典型的在年轻（三年以下）律师的生活状态吧。 律师A是我表
+                        姐，在华政念研究生的第二年去了芝大读了llm，回来后顺带拿了个高级口译，毕业后顺利进了top内所，在公司组做着
+                        高大上非诉业务。 从最初没日高大上非诉业务。 从最初没日高大上非诉业务。 从最初没日高大上非诉业务日高大上非诉业务
+                    </div>
+                </a>
+                <div class="penal">
+                    <span><a href="#">赞</a>(124)</span>
+                    <span><a href="#">评论</a>(52)</span>
+                </div>
+            </div>
+            <div class="search-item">
+                <a href="#">
+                    <div class="title">现在年轻律师的生存状态是怎样的？</div>
+                    <div class="author">单壬贵</div>
+                    <div class="content">
+                        今天恰好和同行讨论到这个话题。目前在上海，写点身边典型的在年轻（三年以下）律师的生活状态吧。 律师A是我表
+                        姐，在华政念研究生的第二年去了芝大读了llm，回来后顺带拿了个高级口译，毕业后顺利进了top内所，在公司组做着
+                        高大上非诉业务。 从最初没日高大上非诉业务。 从最初没日高大上非诉业务。 从最初没日高大上非诉业务日高大上非诉业务
+                    </div>
+                </a>
+                <div class="penal">
+                    <span><a href="#">赞</a>(124)</span>
+                    <span><a href="#">评论</a>(52)</span>
+                </div>
+            </div>
+            <div class="search-item">
+                <a href="#">
+                    <div class="title">现在年轻律师的生存状态是怎样的？</div>
+                    <div class="author">单壬贵</div>
+                    <div class="content">
+                        今天恰好和同行讨论到这个话题。目前在上海，写点身边典型的在年轻（三年以下）律师的生活状态吧。 律师A是我表
+                        姐，在华政念研究生的第二年去了芝大读了llm，回来后顺带拿了个高级口译，毕业后顺利进了top内所，在公司组做着
+                        高大上非诉业务。 从最初没日高大上非诉业务。 从最初没日高大上非诉业务。 从最初没日高大上非诉业务日高大上非诉业务
+                    </div>
+                </a>
+                <div class="penal">
+                    <span><a href="#">赞</a>(124)</span>
+                    <span><a href="#">评论</a>(52)</span>
+                </div>
+            </div>
+            <div class="search-item">
+                <a href="#">
+                    <div class="title">现在年轻律师的生存状态是怎样的？</div>
+                    <div class="author">单壬贵</div>
+                    <div class="content">
+                        今天恰好和同行讨论到这个话题。目前在上海，写点身边典型的在年轻（三年以下）律师的生活状态吧。 律师A是我表
+                        姐，在华政念研究生的第二年去了芝大读了llm，回来后顺带拿了个高级口译，毕业后顺利进了top内所，在公司组做着
+                        高大上非诉业务。 从最初没日高大上非诉业务。 从最初没日高大上非诉业务。 从最初没日高大上非诉业务日高大上非诉业务
+                    </div>
+                </a>
+                <div class="penal">
+                    <span><a href="#">赞</a>(124)</span>
+                    <span><a href="#">评论</a>(52)</span>
+                </div>
+            </div>
+            <div class="search-item">
+                <a href="#">
+                    <div class="title">现在年轻律师的生存状态是怎样的？</div>
+                    <div class="author">单壬贵</div>
+                    <div class="content">
+                        今天恰好和同行讨论到这个话题。目前在上海，写点身边典型的在年轻（三年以下）律师的生活状态吧。 律师A是我表
+                        姐，在华政念研究生的第二年去了芝大读了llm，回来后顺带拿了个高级口译，毕业后顺利进了top内所，在公司组做着
+                        高大上非诉业务。 从最初没日高大上非诉业务。 从最初没日高大上非诉业务。 从最初没日高大上非诉业务日高大上非诉业务
+                    </div>
+                </a>
+                <div class="penal">
+                    <span><a href="#">赞</a>(124)</span>
+                    <span><a href="#">评论</a>(52)</span>
+                </div>
+            </div>
+            <div class="search-item">
+                <a href="#">
+                    <div class="title">现在年轻律师的生存状态是怎样的？</div>
+                    <div class="author">单壬贵</div>
+                    <div class="content">
+                        今天恰好和同行讨论到这个话题。目前在上海，写点身边典型的在年轻（三年以下）律师的生活状态吧。 律师A是我表
+                        姐，在华政念研究生的第二年去了芝大读了llm，回来后顺带拿了个高级口译，毕业后顺利进了top内所，在公司组做着
+                        高大上非诉业务。 从最初没日高大上非诉业务。 从最初没日高大上非诉业务。 从最初没日高大上非诉业务日高大上非诉业务
+                    </div>
+                </a>
+                <div class="penal">
+                    <span><a href="#">赞</a>(124)</span>
+                    <span><a href="#">评论</a>(52)</span>
+                </div>
+            </div>
+            <div class="search-item">
+                <a href="#">
+                    <div class="title">现在年轻律师的生存状态是怎样的？</div>
+                    <div class="author">单壬贵</div>
+                    <div class="content">
+                        今天恰好和同行讨论到这个话题。目前在上海，写点身边典型的在年轻（三年以下）律师的生活状态吧。 律师A是我表
+                        姐，在华政念研究生的第二年去了芝大读了llm，回来后顺带拿了个高级口译，毕业后顺利进了top内所，在公司组做着
+                        高大上非诉业务。 从最初没日高大上非诉业务。 从最初没日高大上非诉业务。 从最初没日高大上非诉业务日高大上非诉业务
+                    </div>
+                </a>
+                <div class="penal">
+                    <span><a href="#">赞</a>(124)</span>
+                    <span><a href="#">评论</a>(52)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-warp">
+
+    </div>
+</footer>
+
+</body>
+</html>
