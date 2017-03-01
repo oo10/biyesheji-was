@@ -1,0 +1,268 @@
+<!--Created by yang on 2017/2/28.-->
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="http://lib.yangqiwang.cn/jquery.min.js"></script>
+</head>
+<style>
+    @import "../style.css";
+    .content-wrap {
+        padding-top: 40px;
+    }
+    .communtiy{
+        width: 1030px;
+    }
+    .communtiy h2 {
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: normal;
+        border-bottom: 1px solid #b9b9b9;
+    }
+    .communtiy-warp {
+        display: flex;
+        justify-content: space-between;
+    }
+    .comm-cont {
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 290px;
+        min-height: 200px;
+        max-height: 480px;
+        overflow: hidden;
+        background: #fff;
+    }
+    .comm-cont h3 {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .comm-cont a {
+        text-overflow: ellipsis;
+        width: 100%;
+        max-height: 24px;
+        overflow: hidden;
+        display: block;
+        line-height: 24px;
+        font-size: 14px;
+        color: #b9b9b9;
+        transition: .5s ease all;
+    }
+    .comm-cont a:hover {
+        font-size: 16px;
+        color: #000;
+    }
+    .article {
+        width: 1030px;
+        margin-top: 30px;
+    }
+    .article-warp {
+        padding: 30px;
+        background: #e2e2ea;
+    }
+    .article-warp h2 {
+        font-size: 30px;
+        line-height: 40px;
+        padding-bottom: 10px;
+        max-height: 40px;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+    }
+    .article-warp p {
+        font-size: 18px;
+        line-height: 24px;
+        max-height: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .article > img {
+        width: 100%;
+        height: 335px;
+        padding: 10px 0;
+        object-fit: contain;
+        background: #d5d5d5;
+    }
+    .penal {
+        font-size: 20px;
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .penal > span {
+        display: flex;
+        align-items: center;
+    }
+    .penal > span > span {
+        margin-right: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .penal > span i {
+        margin-right: 10px;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+    }   
+    .penal > span i.eye {
+        background: url("https://img.alicdn.com/imgextra/i2/1876943437/TB2BWHAhbxmpuFjSZJiXXXauVXa_!!1876943437.jpg");
+    }
+    .penal > span i.msg {
+        background: url("https://img.alicdn.com/imgextra/i4/1876943437/TB2gjjshdRopuFjSZFtXXcanpXa_!!1876943437.jpg");
+    }
+
+
+    .partner {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .partner-warp {
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .partner-warp > img {
+        padding-bottom: 30px;
+        width: 170px;
+        height: 90px;
+        object-fit: cover;
+    }
+</style>
+<body>
+<header>
+    <div class="header-wrap">
+        <div class="title">
+            <h1>风信子</h1>
+            <h4>大学生综合服务平台</h4>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">商城</a></li>
+                <li><a href="#">学库</a></li>
+                <li><a class="cur" href="#">社区</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <img class="user-avatar" src="http://himg.bdimg.com/sys/portrait/item/58a3793632343139303533376506.jpg">
+            <span class="user-name">用户名</span>
+            <a class="user-join">
+                <object><a href="#">登陆</a></object>
+                /
+                <object><a href="#">注册</a></object>
+            </a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="site-nav-wrap">
+        <div class="site-nav">
+            <span class="site-nav-title">社区</span>
+            <div class="search">
+                <input class="search-input" type="text" placeholder="输入商品/店铺">
+                <button class="search-btn">搜索</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrap">
+        <div class="communtiy">
+            <h2>话题列表</h2>
+            <div class="communtiy-warp">
+                <div class="comm-cont">
+                    <h3>最新帖子</h3>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                </div>
+                <div class="comm-cont">
+                    <h3>本周热帖</h3>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                </div>
+                <div class="comm-cont">
+                    <h3>阅读热帖</h3>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                    <a href="#">如何评价支付宝 Android 版隐私门？</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <img class="article-img" src="https://img.alicdn.com/imgextra/i4/1876943437/TB2csfdgHBmpuFjSZFuXXaG_XXa_!!1876943437.jpg">
+            <div class="article-warp">
+                <h2>
+                    如何成为风信子平台用户?
+                </h2>
+                <p>
+                    输入网址www.xxxx.com，进入平台首页，点击右上角：注册：，进入注册页面，然后按照要求操作，即可成功注册为风信子平台用
+                    输入网址www.xxxx.com，进入平台首页，点击右上角：注册：，进入注册页面，然后按照要求操作，即可成功注册为风信子平台用
+                    输入网址www.xxxx.com，进入平台首页，点击右上角：注册：，进入注册页面，然后按照要求操作，即可成功注册为风信子平台用
+                    输入网址www.xxxx.com，进入平台首页，点击右上角：注册：，进入注册页面，然后按照要求操作，即可成功注册为风信子平台用
+                </p>
+                <div class="penal">
+                    <span>
+                        <span><i class="eye"></i>3152</span>
+                        <span><i class="msg"></i>21</span>
+                    </span>
+
+                    <span><a href="#">阅读全文 <object><a style="color:#eb5b4c;font-weight: bolder">　></a></object></a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="communtiy partner">
+            <h2>合作机构</h2>
+            <div class="partner-warp">
+                <img src="https://img.alicdn.com/imgextra/i4/1876943437/TB2csfdgHBmpuFjSZFuXXaG_XXa_!!1876943437.jpg">
+                <img src="https://img.alicdn.com/imgextra/i4/1876943437/TB2csfdgHBmpuFjSZFuXXaG_XXa_!!1876943437.jpg">
+                <img src="https://img.alicdn.com/imgextra/i4/1876943437/TB2csfdgHBmpuFjSZFuXXaG_XXa_!!1876943437.jpg">
+                <img src="https://img.alicdn.com/imgextra/i4/1876943437/TB2csfdgHBmpuFjSZFuXXaG_XXa_!!1876943437.jpg">
+                <img src="https://img.alicdn.com/imgextra/i4/1876943437/TB2csfdgHBmpuFjSZFuXXaG_XXa_!!1876943437.jpg">
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-warp">
+
+    </div>
+</footer>
+
+</body>
+</html>

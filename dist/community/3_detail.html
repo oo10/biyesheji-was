@@ -1,0 +1,374 @@
+<!--Created by yang on 2017/2/28.-->
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="http://lib.yangqiwang.cn/jquery.min.js"></script>
+</head>
+<style>
+    @import "../style.css";
+    .content-wrap {
+        margin-bottom: 70px;
+        padding-top: 40px;
+    }
+    .detail {
+        width: 1030px;
+    }
+    .top-info {
+        height: 70px;
+        background: #d5d5d5;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .top-info-avatar {
+        margin-left: 20px;
+        margin-right: 15px;
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .top-info-cont h2 {
+        font-size: 24px;
+        color: #717171;
+    }
+    .top-info-cont span {
+        font-size: 16px;
+        padding-right: 20px;
+    }
+    .article {
+        background: #e1e2e9;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 30px 30px 100px 30px;
+        text-align: justify;
+    }
+    .article .btn {
+        width: 210px;
+        margin: 0 auto;
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .article .btn a {
+        width: 90px;
+        height: 35px;
+        display: inline-block;
+        overflow: hidden;
+        text-indent: -10000px;
+    }  
+    .article .btn .shoucang {
+        background: url("https://img.alicdn.com/imgextra/i3/1876943437/TB2pKbnholnpuFjSZFjXXXTaVXa_!!1876943437.jpg") 0 0 ;
+    }
+    .article .btn .zan {
+        background: url("https://img.alicdn.com/imgextra/i3/1876943437/TB2pKbnholnpuFjSZFjXXXTaVXa_!!1876943437.jpg") -122px 0 ;
+    }
+
+
+    .comment {
+        background: #d5d5d5;
+        padding: 15px 50px 100px 20px;
+    }
+    .comment h2 {
+        line-height: 40px;
+        font-size: 18px;
+        font-weight: normal;
+        border-bottom: 1px solid #c2c2c2;
+    }
+
+    .comment-item {
+        padding-top: 20px;
+        border-bottom: 1px solid #c2c2c2;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .comment-item .avatar {
+        margin-right: 20px;
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .comment-cont {
+        width: 100%;
+        line-height: 24px;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    .comment-cont .panel {
+        padding-bottom: 6px;
+    }
+    .comment-cont .nike {
+        padding-right: 15px;
+    }
+    .comment-cont span {
+        padding-right: 20px;
+    }
+    .comment-cont .comment-content {
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+    .msg-box {
+        padding: 15px 0 15px 70px;
+        border-bottom: 1px solid #c2c2c2;
+    }
+    .msg-box input {
+        padding-left: 10px;
+        height: 30px;
+        width: 440px;
+    }
+    .msg-box p {
+        padding-top: 15px;
+        width: 440px;
+        text-align: right;
+        font-size: 14px;
+    }
+    .msg-box p a {
+        display: inline-block;
+        padding: 6px 10px;
+    }
+    .msg-box p a.submit {
+        color: #fff;
+        background: #5fb560;
+        border-radius: 6px;
+    }
+
+
+
+    .article-replay {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        text-align: center;
+        width: 100%;
+        background: #e1e2e9;
+    }
+    .article-replay textarea {
+        font-family: inherit;
+        padding: 10px;
+        box-sizing: border-box;
+        border: none;
+        font-size: 20px;
+        margin: 0 auto;
+        width: 900px;
+        height: 150px;
+        background: #fff;
+        margin-bottom: 20px;
+    }
+    .submit-art-replay {
+        display: inline-block;
+        font-size: 18px;
+        text-align: center;
+        width: 90px;
+        height: 30px;
+        line-height: 30px;
+        background: #fff;
+        box-shadow: 2px 4px 4px rgba(126,142,142,0.2);
+    }
+</style>
+<body>
+<header>
+    <div class="header-wrap">
+        <div class="title">
+            <h1>风信子</h1>
+            <h4>大学生综合服务平台</h4>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">商城</a></li>
+                <li><a href="#">学库</a></li>
+                <li><a class="cur" href="#">社区</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <img class="user-avatar" src="http://himg.bdimg.com/sys/portrait/item/58a3793632343139303533376506.jpg">
+            <span class="user-name">用户名</span>
+            <a class="user-join">
+                <object><a href="#">登陆</a></object>
+                /
+                <object><a href="#">注册</a></object>
+            </a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="site-nav-wrap">
+        <div class="site-nav">
+            <span class="site-nav-title">社区</span>
+            <div class="search">
+                <input class="search-input" type="text" placeholder="输入商品/店铺">
+                <button class="search-btn">搜索</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrap">
+        <div class="detail">
+            <div class="top-info">
+                <img class="top-info-avatar" src="http://himg.bdimg.com/sys/portrait/item/58a3793632343139303533376506.jpg">
+                <div class="top-info-cont">
+                    <h2>如何评价支付宝 Android 版隐私门？</h2>
+                    <span>星期八的晴天</span>
+                    <span>2017-02-24</span>
+                    <span>阅读：<span style="color: #e61010">188</span></span>
+                    <span>回复：<span style="color: #e61010">5</span></span>
+                </div>
+            </div>
+            <div class="article">
+                <p class="article-content">
+                    著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。作者：geckhan链接：https://www.zhihu.com/quest
+                    ion/40638556/answer/87610498来源：知乎Android之所以卡 慢 ，就像支xx这样的超级app，起很多后台服务监听用户数据干的。
+                    最后这样Android生态将会被破坏，用户都转投ios或者Windowsphone去了 大部分Androider都会失业，哎。。想想都可怕
+
+                    <br><br>
+                    ---------------------------------------华丽的分割线--------------------------------------------------
+                    <br><br>
+
+                    昨天晚上看到这个消息，草草写了评论，获得了20个赞了。我想认真分析一下我为什么会愤怒。支付宝卡，是卡出了名的。为什么？
+                    楼上写的很清楚，动态加载 .so 文件，搞过Android的同学都知道。动态加载技术被用于热修复（远程修复BUG），这是一个好的初衷
+                    ，也被各大厂商广为应用。楼上爆出了，支付宝利用这个技术做的事情，是在用户不知情的情况下静默录音和拍照！？~每一个功能背
+                    后都会有一个需求链和产业链。需求分为正常需求和非正常需求，假设我们不把支付宝想的那么坏，那么它这个功能，背后的正常需求
+                    是什么？1、阿里的DT时代的需求是第一推动。2、社交，根据声音和图片，更精确的产出一副用户画像，建立社交关系。非正常需求，
+                    在这里我就不猜测了 。。。总之呵呵吧。这个事情导致的结果呢？1、支付宝占用的存储会越来越大。2、阿里的用户画像越来越精准，
+                    什么职业，家住哪里，收入、配偶等信息。人在做，阿里在看啊。3、Android会越来越卡，用户担心自己的隐私，而转投ios阵营。导
+                    致大批Android中级程序员失业。马总曾经说过”一个组织要做一件事情，首先要考虑使命是什么，愿景是什么”梁山108将草莽，虽
+                    然没有建立伟大的愿景，但都知道替天行道。作为国内顶级的BAT，更需要为利益来源的生态考虑，这么大的体量，毁掉一个生态只是
+                    一念之间。
+                </p>
+                <div class="btn">
+                    <a class="shoucang" href="javascript:void(0)">收藏</a>
+                    <a class="zan" href="javascript:void(0)">赞</a>
+                </div>
+            </div>
+            <div class="comment">
+                <h2>评论</h2>
+
+
+
+                <!--  评论 &&  回复评论   -->
+                <div class="comment-item-warp">
+                    <div class="comment-item">
+                        <img class="avatar" src="http://himg.bdimg.com/sys/portrait/item/58a3793632343139303533376506.jpg">
+                        <div class="comment-cont">
+                            <p><span class="nike">你是刘德华</span><span class="time">2017-02-24</span> </p>
+                            <p class="comment-content">写的很好啊</p>
+                            <p class="panel">
+                                <span style="color: #7b7b7b"><a href="javascript:void(0)" class="replay-comment-show">回复</a></span>
+                                <span style="color: #7b7b7b"><a href="javascript:void(0)">支持</a></span>
+                                <span style="color: #7b7b7b"><a href="javascript:void(0)">反对</a></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="msg-box">
+                        <input class="msg-box-input" type="text" placeholder="写下你的评论">
+                        <p>
+                            <a href="javascript:void(0)" class="replay-comment-cancle">取消</a>
+                            <a href="javascript:void(0)" class="submit">评论</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="comment-item-warp">
+                    <div class="comment-item">
+                        <img class="avatar" src="http://himg.bdimg.com/sys/portrait/item/58a3793632343139303533376506.jpg">
+                        <div class="comment-cont">
+                            <p><span class="nike">你是刘德华</span><span class="time">2017-02-24</span> </p>
+                            <p class="comment-content">写的很好啊</p>
+                            <p class="panel">
+                                <span style="color: #7b7b7b"><a href="javascript:void(0)" class="replay-comment-show">回复</a></span>
+                                <span style="color: #7b7b7b"><a href="javascript:void(0)">支持</a></span>
+                                <span style="color: #7b7b7b"><a href="javascript:void(0)">反对</a></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="msg-box">
+                        <input class="msg-box-input" type="text" placeholder="写下你的评论">
+                        <p>
+                            <a href="javascript:void(0)" class="replay-comment-cancle">取消</a>
+                            <a href="javascript:void(0)" class="submit">评论</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="comment-item-warp">
+                    <div class="comment-item">
+                        <img class="avatar" src="http://himg.bdimg.com/sys/portrait/item/58a3793632343139303533376506.jpg">
+                        <div class="comment-cont">
+                            <p><span class="nike">你是刘德华</span><span class="time">2017-02-24</span> </p>
+                            <p class="comment-content">写的很好啊</p>
+                            <p class="panel">
+                                <span style="color: #7b7b7b"><a href="javascript:void(0)" class="replay-comment-show">回复</a></span>
+                                <span style="color: #7b7b7b"><a href="javascript:void(0)">支持</a></span>
+                                <span style="color: #7b7b7b"><a href="javascript:void(0)">反对</a></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="msg-box">
+                        <input class="msg-box-input" type="text" placeholder="写下你的评论">
+                        <p>
+                            <a href="javascript:void(0)" class="replay-comment-cancle">取消</a>
+                            <a href="javascript:void(0)" class="submit">评论</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="comment-item-warp">
+                    <div class="comment-item">
+                        <img class="avatar" src="http://himg.bdimg.com/sys/portrait/item/58a3793632343139303533376506.jpg">
+                        <div class="comment-cont">
+                            <p><span class="nike">你是刘德华</span><span class="time">2017-02-24</span> </p>
+                            <p class="comment-content">写的很好啊</p>
+                            <p class="panel">
+                                <span style="color: #7b7b7b"><a href="javascript:void(0)" class="replay-comment-show">回复</a></span>
+                                <span style="color: #7b7b7b"><a href="javascript:void(0)">支持</a></span>
+                                <span style="color: #7b7b7b"><a href="javascript:void(0)">反对</a></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="msg-box">
+                        <input class="msg-box-input" type="text" placeholder="写下你的评论">
+                        <p>
+                            <a href="javascript:void(0)" class="replay-comment-cancle">取消</a>
+                            <a href="javascript:void(0)" class="submit">评论</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--  回复文章  -->
+            <div class="article-replay">
+                <textarea placeholder="在此输入评论内容"></textarea>
+                <p>
+                    <a class="submit-art-replay" href="javascript:void(0)">发表评论</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-warp">
+
+    </div>
+</footer>
+<script>
+    $(function () {
+        $('.msg-box').hide();
+        $('.msg-box:first').fadeIn();
+
+        $('.replay-comment-show').click(function () {
+            $('.msg-box').hide();
+            $(this).parents('.comment-item-warp').find('.msg-box').fadeIn();
+        })
+        $('.replay-comment-cancle').click(function () {
+            $(this).parents('.comment-item-warp').find('.msg-box').fadeOut();
+        })
+    })
+</script>
+</body>
+</html>
